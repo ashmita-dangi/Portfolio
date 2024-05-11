@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #1c211f;
+  color: #7e9181;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav {
+  display: flex;
+}
+#logo {
+  height: 70px;
+  width: 70px;
+  margin: 50px;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  margin-left: 300px;
+
+  justify-content: center;
+  align-items: center;
+}
+nav > ul > li {
+  margin:0 30px;
+  color: #7e9181;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+nav > ul > li:hover {
+  color: #c7cedb;
+}
+header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.home {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+#img {
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 400px 7px 90px 30px;
+  border: #111414 solid 4px;
+  overflow: hidden;
+  background-image: url(/img/person-with-futuristic-robotic-body-part_23-2151401387.webp);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 24px #cccccc93;
+  transition: border 1s;
+}
+#img:hover {
+  border: solid 3px rgb(137, 137, 68);
+}
+h2 {
+  text-align: center;
+}
+
+.home > div {
+  width: 50%;
+  padding: 40px;
+  color: #7e9181;
+  text-align: start;
+  margin: 30px;
+}
+.skills {
+  margin: 30px;
+  height: 45rem;
+  display: flex;
+  padding: 20px;
+
+  align-items: center;
+  flex-direction: column;
+}
+#skill {
+  height: inherit;
+  width: 60rem;
+  display: flex;
+  box-shadow: inset 0 0 10px rgba(126, 126, 126, 0.5);
+  border-radius: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.skill-bar {
+  background-color:#B5BAD0 ; /* Green */
+  height: 12px;
+  border-radius: 9px;
+  
+}
+#skill img {
+  height: 80px;
+  width: 80px;
+}
+.bar-bg{
+  background-color: #82868358;
+  border-radius: 9px;
+}
+.container {
+  margin: 20px;
+  width: 80%;
+  align-self: center;
+  border-radius: 12px;
+  /* filter: drop-shadow(0 0 10px #739a9ac7); */
+}
+.about {
+  box-shadow: inset 0 0 10px rgba(126, 126, 126, 0.5);
+  border-radius: 30px;
+  width: 80%;
+text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.about a{
+  text-decoration: none;
+  color:#81d2c7;
+  text-shadow:2px 2px 6px #c7cedb7c;
+}
+.projects{
+  padding: 20px;
+  display: flex;
+flex-wrap:wrap;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+
+}
+
+.projects img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  border-radius: 20px;
+  transition: opacity 0.3s;
+  box-shadow: 0 0 24px #cccccc81;
+}
+#p a:hover img {
+  opacity: 0.3;
+}
+#p a {
+  position: relative;
+}
+#p a::after {
+  content: " CLICK TO VIEW MY WORk";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -10%);
+  color: #fcf9f9;
+  font-weight: bolder;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#p a:hover::after {
+  opacity: 1;
+}
+#p {
+  width: 60rem;
+  height: 30rem;
+  display: flex;
+  flex-wrap:wrap;
+  flex-shrink: 2;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 10px rgba(126, 126, 126, 0.5);
+  border-radius: 30px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+form {
+  box-shadow: inset 0 0 10px rgba(126, 126, 126, 0.5);
+  border-radius: 30px;
+  width: 40rem;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  color: aliceblue;
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #007bff82;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4186cf;
+}
+#social img {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 22px;
+}
+
+#footer {
+  color: #459252;
+  padding: 6px;
+  background-color: #7e918130;
+  text-align: center;
+  /* font-size: 18px; */
+  
+}
+.underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; 
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px; 
+  width: 0; 
+  background-color: #81d2c7; 
+  transition: width 0.6s;
+}
+
+.underline:hover::after {
+  width: 100%; 
+}
+
